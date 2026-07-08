@@ -63,6 +63,11 @@ button {
   padding: max(18px, env(safe-area-inset-top)) 18px max(18px, env(safe-area-inset-bottom));
 }
 
+.hero {
+  place-items: start center;
+  padding-top: max(46px, calc(env(safe-area-inset-top) + 7svh));
+}
+
 .hero__visual {
   position: absolute;
   inset: 0;
@@ -74,8 +79,8 @@ button {
   inset: 0;
   content: "";
   background:
-    linear-gradient(180deg, rgba(255, 247, 236, 0.14), rgba(255, 247, 236, 0.74)),
-    radial-gradient(circle at center, rgba(255, 253, 248, 0.22), rgba(255, 253, 248, 0.68));
+    linear-gradient(180deg, rgba(255, 247, 236, 0.06), rgba(255, 247, 236, 0.38)),
+    radial-gradient(circle at 50% 30%, rgba(255, 253, 248, 0.1), rgba(255, 253, 248, 0.3));
 }
 
 .hero__visual img {
@@ -95,12 +100,13 @@ button {
 }
 
 .hero__content {
-  padding: clamp(28px, 8vw, 42px);
+  width: min(100%, 390px);
+  padding: clamp(24px, 6vw, 32px);
   border: 1px solid rgba(255, 255, 255, 0.78);
   border-radius: 8px;
-  background: rgba(255, 253, 248, 0.76);
+  background: rgba(255, 253, 248, 0.8);
   box-shadow: var(--shadow);
-  backdrop-filter: blur(12px);
+  backdrop-filter: blur(4px);
 }
 
 .eyebrow {
@@ -119,7 +125,7 @@ p {
 
 h1 {
   margin: 0;
-  font-size: clamp(3rem, 14.5vw, 4.6rem);
+  font-size: clamp(2.85rem, 13vw, 3.8rem);
   line-height: 0.98;
   font-weight: 800;
   letter-spacing: 0;
@@ -134,7 +140,7 @@ h2 {
 }
 
 .lead {
-  margin: 18px auto 0;
+  margin: 14px auto 0;
   max-width: 20rem;
   color: var(--muted);
   font-size: clamp(1.08rem, 4.4vw, 1.28rem);
@@ -146,7 +152,7 @@ h2 {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  margin-top: 26px;
+  margin-top: 20px;
 }
 
 .primary-btn,
@@ -300,6 +306,10 @@ h2 {
   .hero,
   .wish {
     padding-block: 14px;
+  }
+
+  .hero {
+    place-items: center;
   }
 
   .hero__content,
