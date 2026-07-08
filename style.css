@@ -234,7 +234,9 @@ h2 {
   padding: 14px;
   border: 1px solid rgba(120, 198, 179, 0.32);
   border-radius: 8px;
-  background: #f2fbf6;
+  background: rgba(242, 251, 246, 0.58);
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
 }
 
 .quote-box p {
