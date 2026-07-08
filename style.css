@@ -197,28 +197,25 @@ h2 {
 }
 
 .wish {
-  background:
-    linear-gradient(180deg, rgba(255, 247, 236, 0.8), rgba(244, 251, 247, 0.96)),
-    url("assets/images/study-hero-fast.jpg") center / cover;
+  background: url("assets/images/study-hero-fast.jpg") center / cover;
 }
 
 .wish::before {
   position: absolute;
   inset: 0;
   content: "";
-  background: rgba(255, 250, 242, 0.72);
+  background:
+    linear-gradient(180deg, rgba(255, 247, 236, 0.06), rgba(255, 247, 236, 0.38)),
+    radial-gradient(circle at 50% 30%, rgba(255, 253, 248, 0.1), rgba(255, 253, 248, 0.3));
 }
 
 .wish__content {
   padding: clamp(28px, 8vw, 40px);
-  border: 1px solid rgba(255, 255, 255, 0.72);
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.38);
-  box-shadow:
-    0 22px 60px rgba(97, 72, 45, 0.14),
-    inset 0 1px 0 rgba(255, 255, 255, 0.58);
-  -webkit-backdrop-filter: blur(8px) saturate(1.18);
-  backdrop-filter: blur(8px) saturate(1.18);
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
 }
 
 .message {
