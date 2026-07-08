@@ -102,11 +102,14 @@ button {
 .hero__content {
   width: min(100%, 390px);
   padding: clamp(24px, 6vw, 32px);
-  border: 1px solid rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(255, 255, 255, 0.72);
   border-radius: 8px;
-  background: rgba(255, 253, 248, 0.8);
-  box-shadow: var(--shadow);
-  backdrop-filter: blur(4px);
+  background: rgba(255, 255, 255, 0.34);
+  box-shadow:
+    0 22px 60px rgba(97, 72, 45, 0.14),
+    inset 0 1px 0 rgba(255, 255, 255, 0.58);
+  -webkit-backdrop-filter: blur(8px) saturate(1.18);
+  backdrop-filter: blur(8px) saturate(1.18);
 }
 
 .eyebrow {
@@ -212,10 +215,14 @@ h2 {
 
 .wish__content {
   padding: clamp(28px, 8vw, 40px);
-  border: 1px solid rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.72);
   border-radius: 8px;
-  background: rgba(255, 253, 248, 0.9);
-  box-shadow: var(--shadow);
+  background: rgba(255, 255, 255, 0.38);
+  box-shadow:
+    0 22px 60px rgba(97, 72, 45, 0.14),
+    inset 0 1px 0 rgba(255, 255, 255, 0.58);
+  -webkit-backdrop-filter: blur(8px) saturate(1.18);
+  backdrop-filter: blur(8px) saturate(1.18);
 }
 
 .message {
