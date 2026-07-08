@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#fff6ed" />
+    <meta
+      name="description"
+      content="Một trang nhỏ cổ vũ Huyền Trân thực tập thật tốt."
+    />
+    <title>Cố gắng lên nhá</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="hero" id="intro" aria-label="Lời chào">
+        <div class="hero__visual" aria-hidden="true">
+          <img src="assets/images/study-hero-fast.jpg" alt="" decoding="async" fetchpriority="high" />
+        </div>
+
+        <div class="hero__content">
+          <p class="eyebrow">Gửi Huyền Trân</p>
+          <h1>Cố gắng lên nhá</h1>
+          <p class="lead">Cố gắng thực tập tốt, luôn ở trạng thái tốt nè.</p>
+
+          <div class="actions">
+            <button class="primary-btn" id="openWish" type="button">
+              Mở lời chúc
+            </button>
+            <button class="music-btn" id="musicToggle" type="button" aria-label="Bật nhạc">
+              <span id="musicIcon">Bật nhạc</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="wish" id="wish" aria-label="Lời chúc" hidden>
+        <div class="wish__content">
+          <p class="eyebrow">Một chút động viên</p>
+          <h2>Thực tập thuận lợi nha</h2>
+
+          <p class="message" id="typedMessage"></p>
+
+          <div class="quote-box" aria-live="polite">
+            <p id="rotatingQuote">Tự tin lên nha, Huyền Trân!</p>
+          </div>
+
+          <button class="secondary-btn" id="sparkButton" type="button">
+            Thêm năng lượng
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <p class="rotate-note">Xoay dọc màn hình để xem đẹp hơn nha.</p>
+
+    <canvas id="confettiCanvas" aria-hidden="true"></canvas>
+    <audio id="backgroundMusic" src="assets/music/background-fun.wav" loop preload="auto" autoplay></audio>
+
+    <script src="script.js"></script>
+  </body>
+</html>
